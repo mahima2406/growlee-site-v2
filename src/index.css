@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FAF8F2;
+  --color-dark: #0C0C0C;
+  --color-brand: #E8582A;
+  --color-brand-light: #FFF7F2;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #FAF8F2;
+  color: #1a1a1a;
+}
+
+html { scroll-behavior: smooth; }
+.font-serif { font-family: 'DM Serif Display', serif; }
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(30px, -40px) scale(1.1); }
+}
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-20px, 30px) scale(1.05); }
+}
+@keyframes float3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(25px, -20px) scale(1.08); }
+}
